@@ -1,69 +1,41 @@
-# React + TypeScript + Vite
+# 🏥 Patient Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Patient Management System** built with **React + Redux Toolkit + TypeScript + TailwindCSS**.  
+This project was created as part of an assignment to demonstrate state management, API integration, form handling, and deployment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Responsive navigation (desktop + mobile)
+- Patients list fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
+- Redux Toolkit for state management
+- Add new patient form (updates Redux store)
+- Loading & error states for API calls
+- Styled with TailwindCSS
+- Deployed on Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+- **React 18**
+- **TypeScript**
+- **Redux Toolkit**
+- **TailwindCSS**
+- **Vite** (or CRA/Next if that’s what you used)
+- **Vercel** (deployment)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📸 Screenshots
+(Add screenshots of your app here: landing page, patients list, add patient form, mobile view, etc.)
+<img width="1900" height="875" alt="image" src="https://github.com/user-attachments/assets/b0666524-eed7-4573-9d05-442ad3553c76" />
+<img width="1912" height="879" alt="image" src="https://github.com/user-attachments/assets/a779f002-031e-4af3-a3d9-d7a37c16ec4e" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚡ Getting Started
+Clone the repo and install dependencies:
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+npm install
